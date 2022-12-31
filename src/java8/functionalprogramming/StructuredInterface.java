@@ -1,7 +1,9 @@
-package functional.programming;
+package java8.functionalprogramming;
 
 interface Square {
 	int calculate(int x);
+	void test();
+	default void defaultMethod() {}
 }
 
 class StructuredInterface {
@@ -14,6 +16,11 @@ class StructuredInterface {
 			public int calculate(int x) {
 				int y = x * x;
 				return y;
+			}
+
+			@Override
+			public void test() {
+				// TODO Auto-generated method stub
 			}
 		};
 
