@@ -17,6 +17,7 @@ public class UsingNewKeyword {
 		System.out.println("Hashcode for obj1: " + System.identityHashCode(obj2)); // 1450495309
 
 		System.out.println("Object are Same: " + obj1.equals(obj2)); // false
+		System.out.println("Object are Same: " + (obj1 == obj2)); // false
 	}
 
 }

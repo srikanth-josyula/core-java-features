@@ -18,7 +18,7 @@ public class UsingClassForName {
 			System.out.println("Class loaded: " + clazz.getName());
 
 			// Creates an instance of the dynamically loaded class. This approach is part of
-			// Java's reflection API.
+			// Java's reflection API.(Class.newInstance()):
 			UsingClassForName obj1 = (UsingClassForName) clazz.getDeclaredConstructor().newInstance();
 			UsingClassForName obj2 = (UsingClassForName) clazz.getDeclaredConstructor().newInstance();
 
@@ -26,6 +26,7 @@ public class UsingClassForName {
 			System.out.println("Hashcode for obj1: " + System.identityHashCode(obj2)); // 1670782018
 
 			System.out.println("Object are Same: " + obj1.equals(obj2)); // false
+			System.out.println("Object are Same: " + (obj1 == obj2)); // false
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
