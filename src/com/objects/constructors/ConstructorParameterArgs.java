@@ -12,3 +12,12 @@ public class ConstructorParameterArgs {
 		System.out.println(System.identityHashCode(noArgs));
 	}
 }
+
+
+/**
+ * The constructor ConstructorParameterArgs() is undefined In Java, if you
+ * define any constructors (with parameters or otherwise), the compiler does not
+ * automatically provide a no-argument constructor.
+ **/
+
+ConstructorParameterArgs noArgs = new ConstructorParameterArgs();
