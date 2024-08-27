@@ -10,6 +10,12 @@ public class ConstructorChaining extends ConstructorChainingParent {
 		this("Child"); // This will throw error Constructor call must be the first statement in a constructor
 
 	}
+
+	public ConstructorChaining() {
+		this("Child"); // Calls parameterized constructor of the same class (constructor chaining)
+		super(parentValue); //ERROR Constructor call must be the first statement in a constructor
+		System.out.println("Child no-argument constructor");
+	}
 	
 	// Parameterized constructor
     public ConstructorChaining(String parentValue, String childValue) {
