@@ -7,6 +7,8 @@ public class ConstructorChaining extends ConstructorChainingParent {
 	public ConstructorChaining() {
 		this("Child"); // Calls parameterized constructor of the same class (constructor chaining)
 		System.out.println("Child no-argument constructor");
+		this("Child"); // This will throw error Constructor call must be the first statement in a constructor
+
 	}
 	
 	// Parameterized constructor
