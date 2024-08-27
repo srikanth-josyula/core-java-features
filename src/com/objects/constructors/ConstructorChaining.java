@@ -19,6 +19,7 @@ public class ConstructorChaining extends ConstructorChainingParent {
     public ConstructorChaining(String value) {
     	this.msgChild = value;
     	System.out.println("Child parameterized constructor with String value = " + this.msgChild);
+    	super(parentValue); // Throws errors 'Constructor call must be the first statement in a constructor'
 	}
 
 	public static void main(String[] args) {
