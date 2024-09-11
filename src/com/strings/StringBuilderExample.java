@@ -92,5 +92,15 @@ public class StringBuilderExample {
 		System.out.println("Subsequence from index 15 to 25: " + subseq);
 		// Output: !loudnorW
 
+		StringBuilder sb5 = new StringBuilder("Hello, World! Welcome to Java.");
+
+		int index1 = sb5.indexOf("World");
+		System.out.println("Index of 'World': " + index1); // Output: 7
+
+		int index2 = sb5.indexOf("Java");
+		System.out.println("Index of 'Java': " + index2); // Output: 26
+
+		int index3 = sb5.indexOf("NotFound");
+		System.out.println("Index of 'NotFound': " + index3); // Output: -1
 	}
 }
