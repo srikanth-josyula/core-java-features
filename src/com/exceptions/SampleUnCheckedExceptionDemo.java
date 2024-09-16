@@ -11,7 +11,8 @@ class SampleUnCheckedException extends RuntimeException {
 
 public class SampleUnCheckedExceptionDemo {
 
-	private void someMethod() throws SampleUnCheckedException {
+	// This method throws an unchecked exception, no need to declare `throws`
+	private void someMethod()  {
 		throw new SampleUnCheckedException("Exception called..");
 	}
 
@@ -19,8 +20,7 @@ public class SampleUnCheckedExceptionDemo {
 
 		SampleUnCheckedExceptionDemo cls = new SampleUnCheckedExceptionDemo();
 
-		// NOTE: As this exception extends Runtime, I will not get errors asking to
-		// handle the exception
+		// NOTE: As this exception extends Runtime, I will not get errors asking to handle the exception
 		cls.someMethod();
 
 	}
